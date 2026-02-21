@@ -1,0 +1,30 @@
+                 100 MHz Clock
+                        │
+                        ▼
+                  Clock Divider
+                 (1 Hz Tick Gen)
+                        │
+                        ▼
+                Traffic FSM Core
+        ┌──────────────┼──────────────┐
+        ▼              ▼              ▼
+   LED Control     Timer Logic    Direction Select
+        │
+        ▼
+   R/Y/G Outputs (N, E, S, W)
+        │
+        ▼
+  Green Blink LED Groups
+
+                │
+                ▼
+        Remaining Time (0-99)
+                │
+                ▼
+        Digit Split (Tens/Ones)
+                │
+                ▼
+      8-Digit SSD Driver (MUX)
+                │
+                ▼
+           7-Segment Display
